@@ -1,10 +1,12 @@
 pipeline{
-  agent any
-  stages{
+    agent{
+        label 'aws-agent'
+    }
+      stages{
     stage('build'){
       steps{
         script{
-          echo "build in progress"
+          sh  'mvn clean package'
         }
       }
     }
