@@ -1,4 +1,8 @@
-# jenkins-and-github-actions
+# simple-java-app
+## This is simple Java App to Test Continous Integration and Deployment
 
+### Build the Java code
+```mvn clean package```
 
-hello : mahmoud mahmoud ghanem
+### Run Tests
+```mvn test```
